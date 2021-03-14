@@ -1,0 +1,479 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Dec 15 21:36:00 2020
+# Process ID: 11088
+# Current directory: C:/Users/ASUS/Desktop/TheTruth
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17524 C:\Users\ASUS\Desktop\TheTruth\TheTruth.xpr
+# Log file: C:/Users/ASUS/Desktop/TheTruth/vivado.log
+# Journal file: C:/Users/ASUS/Desktop/TheTruth\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ASUS/Desktop/TheTruth/TheTruth.xpr
+INFO: [Project 1-313] Project file moved from 'D:/verlog_file/fadfasdf/TheTruth' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:51 ; elapsed = 00:00:31 . Memory (MB): peak = 1021.313 ; gain = 0.000
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcsg324-3
+Top: main
+INFO: [Device 21-403] Loading part xc7a35tcsg324-3
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1467.867 ; gain = 230.371
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'main' [C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sources_1/new/main.v:23]
+WARNING: [Synth 8-567] referenced signal 'les' should be on the sensitivity list [C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sources_1/new/main.v:43]
+INFO: [Synth 8-6157] synthesizing module 'looknum' [C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sources_1/new/looknum.v:23]
+	Parameter maxcnt bound to: 25000 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sources_1/new/looknum.v:57]
+INFO: [Synth 8-226] default block is never used [C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sources_1/new/looknum.v:87]
+INFO: [Synth 8-6155] done synthesizing module 'looknum' (1#1) [C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sources_1/new/looknum.v:23]
+INFO: [Synth 8-6157] synthesizing module 'lookcount' [C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sources_1/new/lookcount.v:23]
+	Parameter maxcnt bound to: 25000 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sources_1/new/lookcount.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'lookcount' (2#1) [C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sources_1/new/lookcount.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clock_status' [C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sources_1/new/clock_status.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clock_status' (3#1) [C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sources_1/new/clock_status.v:23]
+INFO: [Synth 8-6157] synthesizing module 'password' [C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sources_1/new/password.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'password' (4#1) [C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sources_1/new/password.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'main' (5#1) [C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sources_1/new/main.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1519.203 ; gain = 281.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1519.203 ; gain = 281.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1519.203 ; gain = 281.707
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1519.203 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/constrs_1/new/main_xdc.xdc]
+Finished Parsing XDC File [C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/constrs_1/new/main_xdc.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1623.645 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:55 ; elapsed = 00:00:37 . Memory (MB): peak = 1635.641 ; gain = 398.145
+17 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:16 ; elapsed = 00:01:04 . Memory (MB): peak = 1635.641 ; gain = 614.328
+file mkdir C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sim_1/new/clock_bjq.v w ]
+add_files -fileset sim_1 C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sim_1/new/clock_bjq.v
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ASUS/Desktop/TheTruth/TheTruth.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'main' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ASUS/Desktop/TheTruth/TheTruth.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj main_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sources_1/new/clock_status.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_status
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sources_1/new/lookcount.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lookcount
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sources_1/new/looknum.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module looknum
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sources_1/new/password.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module password
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sources_1/new/main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-2458] undeclared symbol f, assumed default net type wire [C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sources_1/new/main.v:66]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/TheTruth/TheTruth.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1769.715 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '8' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ASUS/Desktop/TheTruth/TheTruth.sim/sim_1/behav/xsim'
+"xelab -wto 3a7674b443eb43b6a321b2d859122c1f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot main_behav xil_defaultlib.main xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 3a7674b443eb43b6a321b2d859122c1f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot main_behav xil_defaultlib.main xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.looknum
+Compiling module xil_defaultlib.lookcount
+Compiling module xil_defaultlib.clock_status
+Compiling module xil_defaultlib.password
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot main_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/ASUS/Desktop/TheTruth/TheTruth.sim/sim_1/behav/xsim/xsim.dir/main_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/ASUS/Desktop/TheTruth/TheTruth.sim/sim_1/behav/xsim/xsim.dir/main_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Dec 15 21:58:49 2020. For additional details about this file, please refer to the WebTalk help file at D:/Vivado/Vivado/2020.1/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 113.918 ; gain = 23.797
+INFO: [Common 17-206] Exiting Webtalk at Tue Dec 15 21:58:49 2020...
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:25 . Memory (MB): peak = 1769.715 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '24' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ASUS/Desktop/TheTruth/TheTruth.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "main_behav -key {Behavioral:sim_1:Functional:main} -tclbatch {main.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source main.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 1796.816 ; gain = 12.176
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'main_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:21 ; elapsed = 00:00:45 . Memory (MB): peak = 1796.816 ; gain = 27.102
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:09 ; elapsed = 00:00:21 . Memory (MB): peak = 1796.816 ; gain = 0.000
+set_property top clock_bjq [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ASUS/Desktop/TheTruth/TheTruth.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'clock_bjq' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ASUS/Desktop/TheTruth/TheTruth.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj clock_bjq_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sim_1/new/clock_bjq.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_bjq
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1796.816 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '7' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ASUS/Desktop/TheTruth/TheTruth.sim/sim_1/behav/xsim'
+"xelab -wto 3a7674b443eb43b6a321b2d859122c1f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot clock_bjq_behav xil_defaultlib.clock_bjq xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 3a7674b443eb43b6a321b2d859122c1f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot clock_bjq_behav xil_defaultlib.clock_bjq xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clock_status
+Compiling module xil_defaultlib.clock_bjq
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot clock_bjq_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/ASUS/Desktop/TheTruth/TheTruth.sim/sim_1/behav/xsim/xsim.dir/clock_bjq_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/ASUS/Desktop/TheTruth/TheTruth.sim/sim_1/behav/xsim/xsim.dir/clock_bjq_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Dec 15 22:03:05 2020. For additional details about this file, please refer to the WebTalk help file at D:/Vivado/Vivado/2020.1/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 113.898 ; gain = 23.746
+INFO: [Common 17-206] Exiting Webtalk at Tue Dec 15 22:03:05 2020...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:21 . Memory (MB): peak = 1796.816 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '21' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ASUS/Desktop/TheTruth/TheTruth.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "clock_bjq_behav -key {Behavioral:sim_1:Functional:clock_bjq} -tclbatch {clock_bjq.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source clock_bjq.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 1796.816 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'clock_bjq_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:17 ; elapsed = 00:00:35 . Memory (MB): peak = 1796.816 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:21 . Memory (MB): peak = 1796.816 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ASUS/Desktop/TheTruth/TheTruth.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'clock_bjq' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ASUS/Desktop/TheTruth/TheTruth.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj clock_bjq_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sources_1/new/clock_status.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_status
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sim_1/new/clock_bjq.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_bjq
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1796.816 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ASUS/Desktop/TheTruth/TheTruth.sim/sim_1/behav/xsim'
+"xelab -wto 3a7674b443eb43b6a321b2d859122c1f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot clock_bjq_behav xil_defaultlib.clock_bjq xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 3a7674b443eb43b6a321b2d859122c1f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot clock_bjq_behav xil_defaultlib.clock_bjq xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clock_status
+Compiling module xil_defaultlib.clock_bjq
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot clock_bjq_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1796.816 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ASUS/Desktop/TheTruth/TheTruth.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "clock_bjq_behav -key {Behavioral:sim_1:Functional:clock_bjq} -tclbatch {clock_bjq.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source clock_bjq.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1799.563 ; gain = 2.746
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'clock_bjq_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1799.563 ; gain = 2.746
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1799.563 ; gain = 0.000
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sim_1/new/main_bjq.v w ]
+add_files -fileset sim_1 C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sim_1/new/main_bjq.v
+update_compile_order -fileset sim_1
+set_property top main_bjq [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ASUS/Desktop/TheTruth/TheTruth.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'main_bjq' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ASUS/Desktop/TheTruth/TheTruth.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj main_bjq_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sim_1/new/main_bjq.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_bjq
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1799.563 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ASUS/Desktop/TheTruth/TheTruth.sim/sim_1/behav/xsim'
+"xelab -wto 3a7674b443eb43b6a321b2d859122c1f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot main_bjq_behav xil_defaultlib.main_bjq xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 3a7674b443eb43b6a321b2d859122c1f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot main_bjq_behav xil_defaultlib.main_bjq xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.looknum
+Compiling module xil_defaultlib.lookcount
+Compiling module xil_defaultlib.clock_status
+Compiling module xil_defaultlib.password
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.main_bjq
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot main_bjq_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/ASUS/Desktop/TheTruth/TheTruth.sim/sim_1/behav/xsim/xsim.dir/main_bjq_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/ASUS/Desktop/TheTruth/TheTruth.sim/sim_1/behav/xsim/xsim.dir/main_bjq_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Dec 15 22:18:06 2020. For additional details about this file, please refer to the WebTalk help file at D:/Vivado/Vivado/2020.1/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 113.988 ; gain = 17.613
+INFO: [Common 17-206] Exiting Webtalk at Tue Dec 15 22:18:06 2020...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:21 . Memory (MB): peak = 1799.563 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '21' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ASUS/Desktop/TheTruth/TheTruth.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "main_bjq_behav -key {Behavioral:sim_1:Functional:main_bjq} -tclbatch {main_bjq.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source main_bjq.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1799.832 ; gain = 0.270
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'main_bjq_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:14 ; elapsed = 00:00:36 . Memory (MB): peak = 1799.832 ; gain = 0.270
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:20 . Memory (MB): peak = 1802.711 ; gain = 2.879
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ASUS/Desktop/TheTruth/TheTruth.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'main_bjq' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ASUS/Desktop/TheTruth/TheTruth.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj main_bjq_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sources_1/new/clock_status.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_status
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sources_1/new/lookcount.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lookcount
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sources_1/new/looknum.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module looknum
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sources_1/new/main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-2458] undeclared symbol f, assumed default net type wire [C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sources_1/new/main.v:66]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sources_1/new/password.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module password
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sim_1/new/main_bjq.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_bjq
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1802.711 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ASUS/Desktop/TheTruth/TheTruth.sim/sim_1/behav/xsim'
+"xelab -wto 3a7674b443eb43b6a321b2d859122c1f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot main_bjq_behav xil_defaultlib.main_bjq xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 3a7674b443eb43b6a321b2d859122c1f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot main_bjq_behav xil_defaultlib.main_bjq xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.looknum
+Compiling module xil_defaultlib.lookcount
+Compiling module xil_defaultlib.clock_status
+Compiling module xil_defaultlib.password
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.main_bjq
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot main_bjq_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1802.711 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ASUS/Desktop/TheTruth/TheTruth.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "main_bjq_behav -key {Behavioral:sim_1:Functional:main_bjq} -tclbatch {main_bjq.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source main_bjq.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1802.711 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'main_bjq_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:22 . Memory (MB): peak = 1802.711 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1803.633 ; gain = 0.000
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sim_1/new/lookcount_sm.v w ]
+add_files -fileset sim_1 C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sim_1/new/lookcount_sm.v
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sim_1/new/main_bjq.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sim_1/new/main_bjq.v
+file delete -force C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sim_1/new/main_bjq.v
+update_compile_order -fileset sim_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sim_1/new/main_sm.v w ]
+add_files -fileset sim_1 C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sim_1/new/main_sm.v
+update_compile_order -fileset sim_1
+close_design
+close_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1861.820 ; gain = 58.188
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sim_1/new/clock_bjq.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sim_1/new/clock_bjq.v
+file delete -force C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sim_1/new/clock_bjq.v
+update_compile_order -fileset sim_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sim_1/new/clock_status_sm.v w ]
+add_files -fileset sim_1 C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sim_1/new/clock_status_sm.v
+update_compile_order -fileset sim_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sim_1/new/password_sm.v w ]
+add_files -fileset sim_1 C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sim_1/new/password_sm.v
+update_compile_order -fileset sim_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sim_1/new/looknum_sm.v w ]
+add_files -fileset sim_1 C:/Users/ASUS/Desktop/TheTruth/TheTruth.srcs/sim_1/new/looknum_sm.v
+update_compile_order -fileset sim_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 15 23:44:11 2020...

@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../TheTruth.srcs/sources_1/new/clock_status.v" \
+"../../../../TheTruth.srcs/sources_1/new/lookcount.v" \
+"../../../../TheTruth.srcs/sources_1/new/looknum.v" \
+"../../../../TheTruth.srcs/sources_1/new/main.v" \
+"../../../../TheTruth.srcs/sources_1/new/password.v" \
+"../../../../TheTruth.srcs/sim_1/new/main_sm.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

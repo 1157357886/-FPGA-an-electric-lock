@@ -1,0 +1,185 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Dec 16 16:33:47 2020
+# Process ID: 18752
+# Current directory: D:/verlog_file/fzthetruth/TheTruth
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent264 D:\verlog_file\fzthetruth\TheTruth\TheTruth.xpr
+# Log file: D:/verlog_file/fzthetruth/TheTruth/vivado.log
+# Journal file: D:/verlog_file/fzthetruth/TheTruth\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/verlog_file/fzthetruth/TheTruth/TheTruth.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/ASUS/Desktop/TheTruth' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:07 . Memory (MB): peak = 1035.105 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verlog_file/fzthetruth/TheTruth/TheTruth.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'main_sm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/verlog_file/fzthetruth/TheTruth/TheTruth.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj main_sm_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verlog_file/fzthetruth/TheTruth/TheTruth.srcs/sources_1/new/clock_status.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_status
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verlog_file/fzthetruth/TheTruth/TheTruth.srcs/sources_1/new/lookcount.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lookcount
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verlog_file/fzthetruth/TheTruth/TheTruth.srcs/sources_1/new/looknum.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module looknum
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verlog_file/fzthetruth/TheTruth/TheTruth.srcs/sources_1/new/main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-2458] undeclared symbol f, assumed default net type wire [D:/verlog_file/fzthetruth/TheTruth/TheTruth.srcs/sources_1/new/main.v:66]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verlog_file/fzthetruth/TheTruth/TheTruth.srcs/sources_1/new/password.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module password
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verlog_file/fzthetruth/TheTruth/TheTruth.srcs/sim_1/new/main_sm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_sm
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verlog_file/fzthetruth/TheTruth/TheTruth.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/verlog_file/fzthetruth/TheTruth/TheTruth.sim/sim_1/behav/xsim'
+"xelab -wto 3a7674b443eb43b6a321b2d859122c1f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot main_sm_behav xil_defaultlib.main_sm xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 3a7674b443eb43b6a321b2d859122c1f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot main_sm_behav xil_defaultlib.main_sm xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.looknum
+Compiling module xil_defaultlib.lookcount
+Compiling module xil_defaultlib.clock_status
+Compiling module xil_defaultlib.password
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.main_sm
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot main_sm_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/verlog_file/fzthetruth/TheTruth/TheTruth.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "main_sm_behav -key {Behavioral:sim_1:Functional:main_sm} -tclbatch {main_sm.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source main_sm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'main_sm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1072.148 ; gain = 8.031
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/verlog_file/fzthetruth/TheTruth/TheTruth.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'main_sm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/verlog_file/fzthetruth/TheTruth/TheTruth.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj main_sm_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verlog_file/fzthetruth/TheTruth/TheTruth.srcs/sources_1/new/clock_status.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_status
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verlog_file/fzthetruth/TheTruth/TheTruth.srcs/sources_1/new/lookcount.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lookcount
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verlog_file/fzthetruth/TheTruth/TheTruth.srcs/sources_1/new/looknum.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module looknum
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verlog_file/fzthetruth/TheTruth/TheTruth.srcs/sources_1/new/main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-2458] undeclared symbol f, assumed default net type wire [D:/verlog_file/fzthetruth/TheTruth/TheTruth.srcs/sources_1/new/main.v:66]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verlog_file/fzthetruth/TheTruth/TheTruth.srcs/sources_1/new/password.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module password
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verlog_file/fzthetruth/TheTruth/TheTruth.srcs/sim_1/new/main_sm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_sm
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/verlog_file/fzthetruth/TheTruth/TheTruth.sim/sim_1/behav/xsim'
+"xelab -wto 3a7674b443eb43b6a321b2d859122c1f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot main_sm_behav xil_defaultlib.main_sm xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 3a7674b443eb43b6a321b2d859122c1f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot main_sm_behav xil_defaultlib.main_sm xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.looknum
+Compiling module xil_defaultlib.lookcount
+Compiling module xil_defaultlib.clock_status
+Compiling module xil_defaultlib.password
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.main_sm
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot main_sm_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/verlog_file/fzthetruth/TheTruth/TheTruth.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "main_sm_behav -key {Behavioral:sim_1:Functional:main_sm} -tclbatch {main_sm.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source main_sm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'main_sm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1088.273 ; gain = 0.000
+set_property top clock_status_sm [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "D:/verlog_file/fzthetruth/TheTruth/TheTruth.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "D:/verlog_file/fzthetruth/TheTruth/TheTruth.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "D:/verlog_file/fzthetruth/TheTruth/TheTruth.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "D:/verlog_file/fzthetruth/TheTruth/TheTruth.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "D:/verlog_file/fzthetruth/TheTruth/TheTruth.sim/sim_1/behav/xsim/simulate.log"
+reset_project
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "D:/verlog_file/fzthetruth/TheTruth/TheTruth.sim/sim_1/behav/xsim/simulate.log"
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 16 16:50:37 2020...

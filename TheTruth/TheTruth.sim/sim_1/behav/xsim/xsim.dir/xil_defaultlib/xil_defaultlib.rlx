@@ -1,0 +1,15 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+D:/verlog_file/fzthetruth/TheTruth/TheTruth.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
+D:/verlog_file/fzthetruth/TheTruth/TheTruth.srcs/sim_1/new/clock_status_sm.v,1608110147,verilog,,,,clock_status_sm,,,,,,,,
+D:/verlog_file/fzthetruth/TheTruth/TheTruth.srcs/sim_1/new/lookcount_sm.v,1608046098,verilog,,,,lookcount_sm,,,,,,,,
+,,,,,,looknum_sm,,,,,,,,
+D:/verlog_file/fzthetruth/TheTruth/TheTruth.srcs/sim_1/new/main_sm.v,1608094436,verilog,,,,main_sm,,,,,,,,
+D:/verlog_file/fzthetruth/TheTruth/TheTruth.srcs/sim_1/new/password_sm.v,1608111230,verilog,,,,password_sm,,,,,,,,
+D:/verlog_file/fzthetruth/TheTruth/TheTruth.srcs/sources_1/new/clock_status.v,1608110111,verilog,,D:/verlog_file/fzthetruth/TheTruth/TheTruth.srcs/sim_1/new/clock_status_sm.v,,clock_status,,,,,,,,
+D:/verlog_file/fzthetruth/TheTruth/TheTruth.srcs/sources_1/new/lookcount.v,1608108021,verilog,,D:/verlog_file/fzthetruth/TheTruth/TheTruth.srcs/sim_1/new/lookcount_sm.v,,lookcount,,,,,,,,
+D:/verlog_file/fzthetruth/TheTruth/TheTruth.srcs/sources_1/new/looknum.v,1608107971,verilog,,D:/verlog_file/fzthetruth/TheTruth/TheTruth.srcs/sim_1/new/looknum_sm.v,,looknum,,,,,,,,
+D:/verlog_file/fzthetruth/TheTruth/TheTruth.srcs/sources_1/new/main.v,1608037395,verilog,,D:/verlog_file/fzthetruth/TheTruth/TheTruth.srcs/sources_1/new/password.v,,main,,,,,,,,
+D:/verlog_file/fzthetruth/TheTruth/TheTruth.srcs/sources_1/new/password.v,1608111669,verilog,,D:/verlog_file/fzthetruth/TheTruth/TheTruth.srcs/sim_1/new/password_sm.v,,password,,,,,,,,

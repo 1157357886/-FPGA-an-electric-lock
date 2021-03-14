@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verlog_file/fzthetruth/TheTruth/TheTruth.srcs/sources_1/new/looknum.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module looknum
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/verlog_file/fzthetruth/TheTruth/TheTruth.srcs/sim_1/new/looknum_sm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module looknum_sm
